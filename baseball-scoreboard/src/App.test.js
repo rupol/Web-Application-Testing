@@ -15,8 +15,10 @@ it("Renders the scoreboard", () => {
   const wrapper = rtl.render(<App />);
   const ballScore = wrapper.getByText(/balls/i);
   const strikeScore = wrapper.getByText(/strikes/i);
+  const outScore = wrapper.getByText(/outs/i);
   expect(ballScore).toBeVisible();
   expect(strikeScore).toBeVisible();
+  expect(outScore).toBeVisible();
 });
 
 it("Renders the dashboard", () => {
