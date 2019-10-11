@@ -4,7 +4,6 @@ import "./App.css";
 function App() {
   const [balls, setBalls] = useState(0);
   const [strikes, setStrikes] = useState(0);
-  const [hits, setHits] = useState(0);
 
   const ballSetter = event => {
     if (balls < 3 && strikes < 3) {
@@ -40,14 +39,14 @@ function App() {
       <h1>Scoreboard</h1>
 
       <div className="scoreboard">
-        <div>
+        <div className="balls">
           <h2>Balls:</h2>
-          <h3>{balls}</h3>
+          <h3 aria-label="balls">{balls}</h3>
         </div>
 
-        <div>
+        <div className="strikes">
           <h2>Strikes:</h2>
-          <h3>{strikes}</h3>
+          <h3 aria-label="strikes">{strikes}</h3>
         </div>
       </div>
 

@@ -158,8 +158,10 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
-  padding  : 1rem;
+  font-size: 5rem;
+  width    : 100px;
+  height   : 70px;
+  padding  : 8px;
   border   : 1px solid white;
 }
 
@@ -179,6 +181,7 @@ button {
   box-shadow      : 0 6px grey;
   transition      : none;
   position        : relative;
+  margin          : 2rem;
 }
 
 button:hover {
@@ -202,6 +205,7 @@ button:focus {
 
 .scoreboard {
   display        : flex;
+  flex-wrap      : wrap;
   justify-content: space-evenly;
   align-items    : center;
   margin         : 10rem 0;
@@ -209,8 +213,14 @@ button:focus {
   border         : 2px solid white
 }
 
+.balls,
+.strikes {
+  margin: 2rem;
+}
+
 .dashboard {
   display        : flex;
+  flex-wrap      : wrap;
   justify-content: space-evenly;
   align-items    : center;
   margin         : 10rem 0;
